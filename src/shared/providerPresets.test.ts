@@ -29,4 +29,18 @@ describe("provider presets", () => {
       providerType: "openai"
     });
   });
+
+  it("includes the optional Demon Route OpenAI-compatible profile", () => {
+    expect(PROVIDER_PRESETS).toContainEqual({
+      key: "demonroute",
+      label: "Demon Route",
+      description: "Demon Route OpenAI-compatible API",
+      baseUrl: "https://api.demonroute.com/v1",
+      defaultId: "demonroute",
+      defaultName: "Demon Route",
+      apiKeyHint: "Demon Route API key",
+      localOnly: false,
+      providerType: "openai"
+    });
+  });
 });

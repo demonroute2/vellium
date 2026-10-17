@@ -78,6 +78,17 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
     providerType: "openai"
   },
   {
+    key: "demonroute",
+    label: "Demon Route",
+    description: "Demon Route OpenAI-compatible API",
+    baseUrl: "https://api.demonroute.com/v1",
+    defaultId: "demonroute",
+    defaultName: "Demon Route",
+    apiKeyHint: "Demon Route API key",
+    localOnly: false,
+    providerType: "openai"
+  },
+  {
     key: "a2agent",
     label: "A2Agent",
     description: "A2Agent OpenAI-compatible API gateway",

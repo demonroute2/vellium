@@ -37,6 +37,7 @@ From both `Settings` and `Welcome`, you can create a provider profile from a pre
 - `KoboldCpp`
 - `OpenRouter`
 - `Requesty`
+- `Demon Route`
 - `A2Agent`
 - `Custom`
 
@@ -81,6 +82,18 @@ inference in the EU as well, choose an EU-hosted model; the EU endpoint alone
 can still route to models outside the EU. See
 https://docs.requesty.ai/features/eu-routing for details. Requesty uses the
 existing `OpenAI-compatible` provider path.
+
+### Demon Route setup
+
+Choose `Demon Route` from the quick presets, enter your Demon Route API key from
+https://demonroute.com/login, save the profile, and use `Load models`. Vellium
+queries the authenticated `https://api.demonroute.com/v1/models` endpoint, which
+returns `family/Name` model IDs such as
+`dphn/Dolphin-Mistral-24B-Venice-Edition`. The catalog is open-weight and
+focused on roleplay and uncensored fine-tunes; see https://demonroute.com/models.
+If the model list cannot be loaded, add one or more model IDs to `manual
+fallback models`. Demon Route uses the existing `OpenAI-compatible` provider
+path.
 
 ### Provider types
 
